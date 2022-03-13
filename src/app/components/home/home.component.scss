@@ -1,0 +1,133 @@
+
+.home-content{
+    z-index: 1;
+    position: relative;
+    .hi{
+        
+        position: relative;
+        
+        
+        font-weight: 400;
+        color:rgb(96, 96, 96) ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .name{
+      
+        position: relative;
+        
+        margin-top: 4vh;
+        
+        font-weight: 700;
+        color:rgb(96, 96, 96) ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .designation{
+        
+        position: relative;
+        
+     
+        font-weight: 600;
+        color:rgb(96, 96, 96) ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .reach-out {
+        position: relative;
+        button ::ng-deep{
+            color: rgb(226,226, 226);
+            background-color: rgb(96, 96, 96);
+        }
+    }
+}
+
+
+
+@media screen and (min-width:768px){
+    .hi{
+        margin-left: 9.5vw;
+        font-size: 1rem;
+        top:15vh ;
+    }
+    .name{
+        margin-left: 9.5vw;
+        top:15vh ;
+        font-size: 3rem;
+    }
+    .designation{
+        margin-left: 9.5vw;
+        top:22vh ;
+        font-size: 2rem;
+
+    }
+    .reach-out{
+        margin-left: 9.5vw;
+        top: 32vh;
+    }
+}
+@media screen and (max-width:768px) and (min-width: 576px) {
+    .hi{
+        margin-left: 9.5vw;
+        font-size: 1rem;
+        top:15vh ;
+    }
+    .name{
+        margin-left: 9.5vw;
+        top:15vh ;
+        font-size: 3rem;
+    }
+    .designation{
+        margin-left: 9.5vw;
+        top:22vh ;
+        font-size: 2rem;
+
+    }
+    .reach-out{
+        margin-left: 9.5vw;
+        top: 32vh;
+    }
+}
+@media screen and (max-width:576px) {
+    .hi{
+        top:13vh ;
+        font-size: 0.8rem;
+        margin-left: 3px;
+    }
+    .name{
+        top:13vh ;
+        font-size: 2.4rem;
+        margin-left: 3px;
+    }
+    .designation{
+        margin-left: 3px;
+        top:20vh ;
+        font-size: 1.6rem;
+
+    }
+    .reach-out{
+        top: 28vh;
+        margin-left: 3px;
+    }
+   
+}
+@media screen and (max-width:310px) {
+    .hi{
+        top:13vh ;
+        font-size: 0.6rem;
+        margin-left: 3px;
+    }
+    .name{
+        top:13vh ;
+        font-size: 1.8rem;
+        margin-left: 3px;
+    }
+    .designation{
+        margin-left: 3px;
+        top:20vh ;
+        font-size: 1.2rem;
+
+    }
+    .reach-out{
+        margin-left: 3px;
+        top: 28vh;
+    }
+}
+

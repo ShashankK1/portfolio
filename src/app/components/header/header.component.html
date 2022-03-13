@@ -1,0 +1,42 @@
+<div class="container-fluid  header">
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <a class="navbar-brand logo" (click)="headerClicked(0)"><mat-icon>developer_mode</mat-icon></a>
+        <button
+        class="navbar-toggler menu-icon"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#toggleMobileMenu"
+        aria-controls="toggleMobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav text-center">
+                <li >
+                    <a class="nav-link header-text" (click)="headerClicked(0)">Home</a>
+                </li>
+                <li >
+                    <a class="nav-link header-text" (click)="headerClicked(1)">Education</a>
+                </li>
+                <li >
+                    <a class="nav-link header-text" (click)="headerClicked(2)">Skills</a>
+                </li>
+                <li >
+                    <a class="nav-link header-text" (click)="headerClicked(3)">Experience</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- <div class="container-fluid header">
+    <ng-container *ngIf="!smallDevice">
+
+        <div class="header-text" *ngFor="let text of headers;let i=index" >
+            <strong (click)="headerClicked(i)">{{text}}</strong>
+        </div>
+    </ng-container>
+    <mat-icon *ngIf="smallDevice" class="menu" (click)="menuToggle()">menu</mat-icon>
+
+</div> -->
