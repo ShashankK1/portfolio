@@ -11,7 +11,7 @@ export class BackgroundComponent implements OnInit {
   particlesOptions:any = {
     background: {
         color: {
-            value: "#ffffff"
+            value:'#a517ba'
         }
     },
     fpsLimit: 120,
@@ -49,10 +49,10 @@ export class BackgroundComponent implements OnInit {
     },
     particles: {
         color: {
-            value: "#a517ba"
+            value: "#fff"
         },
         links: {
-            color: "#5f1782",
+            color: "#fff",
             distance: 150,
             enable: true,
             opacity: 0.2,

@@ -1,10 +1,14 @@
-<section class="education" [@fade]="true">
+<section class="education text-white" [@fade]="true">
     <div class="container-md">
         <div class="row mt-5">
             <div class="col-md-12">
-               <mat-stepper [linear]="false" [orientation]="smallSize?'vertical':'horizontal'" labelPosition="bottom">
-                   <mat-step >
-                    <ng-template matStepLabel>School</ng-template>
+               <mat-stepper [linear]="false" 
+               [orientation]="smallSize?'vertical':'horizontal'" 
+               labelPosition="bottom" 
+               class="text-white"
+               [disableRipple]="true">
+                   <mat-step [completed]="true">
+                    <ng-template matStepLabel><p class="text-white">School</p></ng-template>
                     <div class="card mt-md-5">
                         <div class="card-body">
                           <h5 class="card-title">Special title treatment</h5>
@@ -13,8 +17,8 @@
                         </div>
                     </div>
                    </mat-step >
-                   <mat-step >
-                    <ng-template matStepLabel>College</ng-template>
+                   <mat-step [completed]="true">
+                    <ng-template matStepLabel><p class="text-white">College</p></ng-template>
                     <div class="card mt-md-5">
                         <div class="card-body">
                           <h5 class="card-title">Special title treatment</h5>
@@ -23,8 +27,8 @@
                         </div>
                     </div>
                    </mat-step>
-                   <mat-step>
-                    <ng-template matStepLabel>Job</ng-template>
+                   <mat-step [completed]="true">
+                    <ng-template matStepLabel><p class="text-white">Job</p></ng-template>
                     <div class="card mt-md-5">
                         <div class="card-body">
                           <h5 class="card-title">Special title treatment</h5>

@@ -9,5 +9,27 @@
         background-color: rgba(135, 17, 153, 0.4);
         box-shadow: rgba(135, 17, 153, 0.25) 0px 2px 5px -1px, rgba(135, 17, 153, 0.3) 0px 1px 3px -1px;
     }
+    .mat-step-header .mat-step-icon-selected ::ng-deep, .mat-step-header .mat-step-icon-state-done ::ng-deep, .mat-step-header .mat-step-icon-state-edit ::ng-deep {
+        background-color: #ffffff;
+        color: #fff;
+    }
     
+}
+.mat-step-icon-selected ::ng-deep {
+    background-color: #ffffff;
+        color: #fff;
+}
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: #a517ba; 
+ }
+ ::ng-deep .mat-step-header .mat-step-icon-state-edit  {
+    background-color: #a517ba;
+    color: #fff;
+}
+::ng-deep .mat-stepper-label-position-bottom .mat-stepper-horizontal-line {
+    background-color: white;
+}
+::ng-deep .mat-step-header .mat-step-icon {
+    background-color: #a517ba ;
+    color: #fff;
 }

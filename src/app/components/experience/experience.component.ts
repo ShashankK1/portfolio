@@ -1,3 +1,4 @@
+import { Contacts } from './../../models/contact';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
+  contacts:any[] = []
   constructor() { }
 
   ngOnInit(): void {
+    this.contacts = Contacts;
+    console.log(this.contacts);
   }
 
 }

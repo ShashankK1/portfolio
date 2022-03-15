@@ -1,3 +1,4 @@
+import { ExperienceComponent } from './components/experience/experience.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgParticlesModule } from "ng-particles";
@@ -21,7 +22,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     HomeComponent,
     HeaderComponent,
     SkillsComponent,
-    EducationComponent
+    EducationComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
