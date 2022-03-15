@@ -1,0 +1,13 @@
+.education{
+    z-index: 1;
+    position: relative;
+    .mat-stepper-horizontal, .mat-stepper-vertical ::ng-deep {
+        background-color: transparent;
+    }
+    .card{
+        backdrop-filter: blur(1px);
+        background-color: rgba(135, 17, 153, 0.4);
+        box-shadow: rgba(135, 17, 153, 0.25) 0px 2px 5px -1px, rgba(135, 17, 153, 0.3) 0px 1px 3px -1px;
+    }
+    
+}

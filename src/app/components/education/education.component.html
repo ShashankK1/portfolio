@@ -1,1 +1,40 @@
-<p>education works!</p>
+<section class="education" [@fade]="true">
+    <div class="container-md">
+        <div class="row mt-5">
+            <div class="col-md-12">
+               <mat-stepper [linear]="false" [orientation]="smallSize?'vertical':'horizontal'" labelPosition="bottom">
+                   <mat-step >
+                    <ng-template matStepLabel>School</ng-template>
+                    <div class="card mt-md-5">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                   </mat-step >
+                   <mat-step >
+                    <ng-template matStepLabel>College</ng-template>
+                    <div class="card mt-md-5">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                   </mat-step>
+                   <mat-step>
+                    <ng-template matStepLabel>Job</ng-template>
+                    <div class="card mt-md-5">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                   </mat-step>
+               </mat-stepper>
+            </div>
+        </div>
+    </div>
+</section>

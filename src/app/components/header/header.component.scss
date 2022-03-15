@@ -1,74 +1,26 @@
-.header{
-    z-index: 1;
+#nav-bar{
+   
+    z-index: 10;
     position: sticky;
-    background-color: rgba($color: #000000, $alpha: 0.2);
-    // display: flex;
-    // justify-content: flex-end;
-    .text{
-        display: flex;
-        justify-content: flex-end;
-    }
-   
-    .logo{
-        cursor: pointer;
-        margin-top: 13px;
-        margin-left: 12px;
-        mat-icon ::ng-deep{
-            font-size: 32px;
-        }
-    }
-    .header-text{
-        // display: flex;
-        // flex-direction: column;
-        color: rgb(116, 116, 116);
-        font-size: 2rem;
-        margin-top: 12px;
-        margin-right: 24px;
-        margin-left: 12px;
-        margin-bottom: 8px;
-        cursor: pointer;
-        padding-bottom: 3px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    .header-text:hover{
-        color: rgb(96, 96, 96);;
-        transform: scale(1.2);
-        transition: 0.35s;
-    }
-    @media screen and (min-width:768px) and (max-width:960px) {
-        .header-text{
-            font-size: 1.6rem;
-        }
-    }
-    @media screen and (max-width:768px) and (min-width: 576px) {
-        .header-text{
-            
-            font-size: 1.4rem;
-        }
-    }
-    @media screen and (max-width: 576px) {
-        .header-text{
-            margin-top: 4px;
-            font-size: 1.2rem;
-        }
-        .logo{
-            
-            margin-top: 8px;
-            margin-left: 12px;
-            mat-icon ::ng-deep{
-                font-size: 24px;
-            }
-        }
-        
-    }
-   
-    
+    top: 0;
 }
-// @media screen and (max-width: 576px) {
-//     // .header{
-//     //     position: absolute;    
-//     //     top: 0px;
-//     // }
-    
-    
-// }
+.navbar{
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+    padding: 5px!important;
+}
+.navbar-brand img{
+    height: 40px;
+    padding-left: 40px;
+}
+.navbar-nav li{
+    padding: 0 20px;
+}
+.navbar-nav li a{
+    cursor: pointer;
+    color: #fff !important;
+    font-weight: 600;
+}
+.navbar-toggler{
+    margin-right: 30px;
+    outline: none!important;
+}

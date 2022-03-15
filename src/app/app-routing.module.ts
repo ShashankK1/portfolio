@@ -1,3 +1,7 @@
+import { ExperienceComponent } from './components/experience/experience.component';
+
+import { EducationComponent } from './components/education/education.component';
+import { SkillsComponent } from './components/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -14,15 +18,14 @@ const routes: Routes = [
   },
   {
   path:'skills',
-  component:HomeComponent
+  component:SkillsComponent
   },
   {
   path:'education',
-  component:HomeComponent
-  },
-  {
-  path:'experience',
-  component:HomeComponent
+  component:EducationComponent
+  },{
+    path:'contact',
+    component:ExperienceComponent
   }];
 
 @NgModule({

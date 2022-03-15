@@ -1,1 +1,24 @@
-<p>skills works!</p>
+<section class="skills mt-5">
+    <div class="container-md">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 col-sm-6 col-xs-12 g-5 mt-4" [@side]="true" *ngFor="let skill of skills;let i=index">
+                <div class="card mx-auto my-3" style="width: 12rem;">
+                    <img class="card-img-top" src="{{skill.icon}}" alt="Card image cap" >
+                    <div class="card-body">
+                        <h3 class="card-title text-white">{{skill.name}}</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4 col-sm-6 col-xs-12 g-5">
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit?
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 g-5">
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit?
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>

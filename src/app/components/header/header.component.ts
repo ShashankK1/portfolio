@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  headers:string[] = ['Home','Education','Skills','Experience'];
+  headers:string[] = ['Home','Education','Skills','Contact'];
   smallDevice:boolean = false;
   toggle:boolean = false;
 

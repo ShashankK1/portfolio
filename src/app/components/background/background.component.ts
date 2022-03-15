@@ -49,10 +49,10 @@ export class BackgroundComponent implements OnInit {
     },
     particles: {
         color: {
-            value: "#747474"
+            value: "#a517ba"
         },
         links: {
-            color: "#747474",
+            color: "#5f1782",
             distance: 150,
             enable: true,
             opacity: 0.2,
