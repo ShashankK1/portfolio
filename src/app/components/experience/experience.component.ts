@@ -17,8 +17,8 @@ export class ExperienceComponent implements OnInit {
 
   redirect(e:any){
     if(e.type === 'Y'){
-      console.log(e.link);
-      window.open("www.linkedin.com/in/shashank-kumar-7a2546207");
+      // console.log(e.link);
+      // window.open("www.linkedin.com/in/shashank-kumar-7a2546207");
     }
   }
 }
