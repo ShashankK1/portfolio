@@ -13,7 +13,12 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit(): void {
     this.contacts = Contacts;
-    console.log(this.contacts);
   }
 
+  redirect(e:any){
+    if(e.type === 'Y'){
+      console.log(e.link);
+      window.open("www.linkedin.com/in/shashank-kumar-7a2546207");
+    }
+  }
 }

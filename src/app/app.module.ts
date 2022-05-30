@@ -13,7 +13,8 @@ import { EducationComponent } from './components/education/education.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatStepperModule} from '@angular/material/stepper';
-
+import { ResumeDialogComponent } from './components/home/resume-dialog/resume-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     HeaderComponent,
     SkillsComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ResumeDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatStepperModule
+    MatStepperModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

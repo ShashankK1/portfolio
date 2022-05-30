@@ -1,5 +1,7 @@
+import { ResumeDialogComponent } from './resume-dialog/resume-dialog.component';
 import { style, transition, trigger, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 
 @Component({
@@ -15,9 +17,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog:MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openResumeDialog(){
+    let dialogRef = this.dialog.open(ResumeDialogComponent,{
+      height: '400px',
+      width: '600px',
+    });
+
+    dialogRef.afterClosed().subscribe();
   }
 
 }
