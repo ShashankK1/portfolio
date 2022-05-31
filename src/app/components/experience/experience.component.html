@@ -1,12 +1,12 @@
 <div class="contacts">
     <div class="container-md">
         <div class="row d-flex">
-            <div class="col-md-3 col-sm-6 col-xs-12 d-flex justify-content-center flex-column gy-5"
+            <div class="col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center flex-column gy-5"
              *ngFor="let contact of contacts;let i=index"
-             [ngClass]="(contact.type==='Y')?'enable':''"
+             [ngClass]="(contact.type==='Y')?'enable':'disable'"
              (click)="redirect(contact)">
-                <img class="img-fluid mx-auto" src="{{contact.icon}}" style="width: 4rem;">
-                <h1 class="mx-auto text-white">
+                <img class="img-fluid mx-auto contact-image" src="{{contact.icon}}" style="width: 6rem;">
+                <h1 class="mx-auto text-white mt-3">
                     {{contact.name}}
                 </h1>
             </div>

@@ -1,10 +1,16 @@
 <section class="banner" [@fade]="true">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 ml-2">
-                <h1 class="name">Shashank Kumar</h1>
-                <p>Coding Enthusiast</p>
-                <button class="btn btn-primary" (click)="openResumeDialog()">Resume</button>
+            <div class="col-md-6 ml-2 d-flex flex-column">
+                <div class="texts">
+                    <p>Hello!</p>
+                    <p>I'm Shashank,</p>
+                    <p>just a guy who works</p>
+                    <p>as a Software Developer for fun</p>
+                </div>
+                
+                
+                <button class="btn btn-primary" style="width:100px;" (click)="openResumeDialog()">Resume</button>
             </div>
             <div class="col-md-6 text-center">
                 <img src="../../../assets/home2.png" class="img-fluid">
